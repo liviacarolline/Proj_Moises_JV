@@ -6,12 +6,13 @@ public class JV {
 
 	      public static void main(String[] args) {
 	    	  
-	    //Criação das variaveis
+	    //CriaÃ§Ã£o das variaveis
 	    	  
 	        	Scanner scanner= new Scanner(System.in);
-	            int ganhou = 0, escolheJogador=0;
-	            char posicao;
-	            char tabuleiro[][]=new char [3][3];
+	            	int ganhou = 0;
+	            	int escolheJogador=0;
+	            	char posicao;
+	            	char tabuleiro[][]=new char [3][3];
 	        	tabuleiro[0][0]='1';
 	        	tabuleiro[0][1]='2';
 	        	tabuleiro[0][2]='3';
