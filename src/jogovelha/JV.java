@@ -33,6 +33,11 @@ public class JV {
                  
                   System.out.println("\n");
             }
+            do{
+            	escolheJogador = escolheJogador%2;
+            	
+            	
+            }
 
 
 
