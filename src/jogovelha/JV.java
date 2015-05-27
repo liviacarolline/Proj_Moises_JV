@@ -34,6 +34,7 @@ public class JV {
                   System.out.println("\n");
             }
             do{
+            // para ir mudando de jogador a cada jogada (metodo par/impa)
             	escolheJogador = escolheJogador%2;
             	
             	
