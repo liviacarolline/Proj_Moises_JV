@@ -22,6 +22,18 @@ public class JV {
 	        	tabuleiro[2][0]='7';
 	        	tabuleiro[2][1]='8';
 	        	tabuleiro[2][2]='9';
+	        	
+	// Mostrar Matriz
+            
+            for(int i=0; i<3 ; i++){      
+                 for(int j=0 ; j<3 ; j++){
+                       
+                        System.out.printf("   "+tabuleiro[i][j]);
+                  }
+                 
+                  System.out.println("\n");
+            }
+
 
 
 
