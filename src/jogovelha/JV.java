@@ -34,12 +34,17 @@ public class JV {
                   System.out.println("\n");
             }
             do{
-            // para ir mudando de jogador a cada jogada (metodo par/impa)
+            // para ir mudando de jogador a cada jogada (metodo par/impar)
             	escolheJogador = escolheJogador%2;
             	
             	
             }
 
+
+ 		if(escolheJogador == 0){    
+	    // ler char do teclado para posição no tabuleiro
+            	System.out.println("Jogador '1', Entre com uma posição: ");
+        	 posicao=scanner.nextLine().charAt(0);
 
 
 
