@@ -49,6 +49,16 @@ public class JV {
                     			}
               			}
        		 	}
+       		// verifica se o jogador ainda é o mesmo jogador/caso a posição seja invalida
+        	if(escolheJogador==0){    
+              	System.out.println("\n\n\n\n\nPosição Inválida\n");        
+        	}
+           
+        	}else{
+		// Pede posição ao jogador
+              	System.out.println("Jogador '2', Entre com uma posição");
+              	posicao=scanner.nextLine().charAt(0);  
+
 
 
 
