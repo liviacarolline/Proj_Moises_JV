@@ -81,12 +81,26 @@ public class JV {
 				System.out.println("\n");
 	        	}
 			// verificar combinações para X. Passando ganhou para 1, que sera necessario para terminar o do while.
-	            	if(tabuleiro[0][0]=='X'&&tabuleiro[0][1]=='X'&&tabuleiro[0][2]=='X' || tabuleiro[1][0]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[1][2]=='X' || tabuleiro[2][0]=='X'&&tabuleiro[2][1]=='X'&&tabuleiro[2][2]=='X' || tabuleiro[0][0]=='X'&&tabuleiro[1][0]=='X'&&tabuleiro[2][0]=='X' || tabuleiro[0][1]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[2][1]=='X'		  || tabuleiro[0][2]=='X'&&tabuleiro[1][2]=='X'&&tabuleiro[2][2]=='X' || tabuleiro[0][0]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[2][2]=='X' || tabuleiro[2][0]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[0][2]=='X'){
+	            	if(tabuleiro[0][0]=='X'&&tabuleiro[0][1]=='X'&&tabuleiro[0][2]=='X' || 
+	            	tabuleiro[1][0]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[1][2]=='X' || 
+	            	tabuleiro[2][0]=='X'&&tabuleiro[2][1]=='X'&&tabuleiro[2][2]=='X' || 
+	            	tabuleiro[0][0]=='X'&&tabuleiro[1][0]=='X'&&tabuleiro[2][0]=='X' || 
+	            	tabuleiro[0][1]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[2][1]=='X' || 
+	            	tabuleiro[0][2]=='X'&&tabuleiro[1][2]=='X'&&tabuleiro[2][2]=='X' || 
+	            	tabuleiro[0][0]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[2][2]=='X' || 
+	            	tabuleiro[2][0]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[0][2]=='X'){
 	              		System.out.println("\n\n\n\n\nO jogador 1 ganhou!!!!!\n\n\n\n\n\n\n\n");
 	        		ganhou=1;
 	        	}
 	        	// verificar combinações para O
-	        	if(tabuleiro[0][0]=='O'&&tabuleiro[0][1]=='O'&&tabuleiro[0][2]=='O' || tabuleiro[1][0]=='O'&&tabuleiro[1][1]=='O'&&tabuleiro[1][2]=='O' || tabuleiro[2][0]=='O'&&tabuleiro[2][1]=='O'&&tabuleiro[2][2]=='O' || tabuleiro[0][0]=='O'&&tabuleiro[1][0]=='O'&&tabuleiro[2][0]=='O' || tabuleiro[0][1]=='O'&&tabuleiro[1][1]=='O'&&tabuleiro[2][1]=='O' || tabuleiro[0][2]=='O'&&tabuleiro[1][2]=='O'&&tabuleiro[2][2]=='O' || tabuleiro[0][0]=='O'&&tabuleiro[1][1]=='O'&&tabuleiro[2][2]=='O' || tabuleiro[2][0]=='O'&&tabuleiro[1][1]=='O'&&tabuleiro[0][2]=='O'){
+	        	if(tabuleiro[0][0]=='O'&&tabuleiro[0][1]=='O'&&tabuleiro[0][2]=='O' || 
+	        	tabuleiro[1][0]=='O'&&tabuleiro[1][1]=='O'&&tabuleiro[1][2]=='O' || 
+	        	tabuleiro[2][0]=='O'&&tabuleiro[2][1]=='O'&&tabuleiro[2][2]=='O' || 
+	        	tabuleiro[0][0]=='O'&&tabuleiro[1][0]=='O'&&tabuleiro[2][0]=='O' || 
+	        	tabuleiro[0][1]=='O'&&tabuleiro[1][1]=='O'&&tabuleiro[2][1]=='O' || 
+	        	tabuleiro[0][2]=='O'&&tabuleiro[1][2]=='O'&&tabuleiro[2][2]=='O' || 
+	        	tabuleiro[0][0]=='O'&&tabuleiro[1][1]=='O'&&tabuleiro[2][2]=='O' || 
+	        	tabuleiro[2][0]=='O'&&tabuleiro[1][1]=='O'&&tabuleiro[0][2]=='O'){
 	              		System.out.println("\n\n\n\n\nO jogador 2 ganhou!!!!!\n\n\n\n\n\n\n\n");
 	              		ganhou=1;
 	        	}
