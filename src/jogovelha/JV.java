@@ -44,24 +44,36 @@ public class JV {
                   		for(int j=0 ; j<3 ; j++){
                         		if(posicao==tabuleiro[i][j]){
                              		tabuleiro[i][j]='X';
-					// pra passar vez para o proximo jogador
+					//passar a vez para o proximo jogador
                          		escolheJogador=escolheJogador+1;       
                     			}
               			}
        		 	}
-       		// verifica se o jogador ainda é o mesmo jogador/caso a posição seja invalida
-        	if(escolheJogador==0){    
-              	System.out.println("\n\n\n\n\nPosição Inválida\n");        
-        	}
+       			// verifica se o jogador ainda é o mesmo jogador/caso a posição seja invalida
+        		if(escolheJogador==0){    
+              		System.out.println("\n\n\n\n\nPosição Inválida\n");        
+        		}
            
         	}else{
-		// Pede posição ao jogador
+		// ler do teclado a posição no tabuleiro
               	System.out.println("Jogador '2', Entre com uma posição");
-              	posicao=scanner.nextLine().charAt(0);  
+              	posicao=scanner.nextLine().charAt(0);
+              	    	for(int i=0; i<3 ; i++){       
+                        	for(int j=0 ; j<3 ; j++){
+				// Colocar o simbolo na posição escolhida
+                             		if(posicao==tabuleiro[i][j]){
+                               		tabuleiro[i][j]='O';
+					//passar a vez para o proximo jogador
+                               		escolheJogador=escolheJogador+1;
+                         		}
+                        	}
+			}
+
+
+
 
 
 
 
 }
-	      
 }
