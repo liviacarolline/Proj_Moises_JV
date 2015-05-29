@@ -69,7 +69,12 @@ public class JV {
                         	}
 			}
 
-
+		// verifica se o jogador ainda é o mesmo jogador/caso a posição seja invalida
+                        if(escolheJogador==0){
+                             System.out.println("\n\n\n\n\nPosição Inválida\n");       
+                        }
+                       
+                  }     
 
 
 
