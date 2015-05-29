@@ -53,7 +53,7 @@ public class JV {
         		if(escolheJogador==0){    
               		System.out.println("\n\n\n\n\nPosição Inválida\n");        
         		}
-           
+    
         	}else{
 		// ler do teclado a posição no tabuleiro
               	System.out.println("Jogador '2', Entre com uma posição");
@@ -68,21 +68,22 @@ public class JV {
                          		}
                         	}
 			}
-
-		// verifica se o jogador ainda é o mesmo jogador/caso a posição seja invalida
+			// verifica se o jogador ainda é o mesmo jogador/caso a posição seja invalida
                         if(escolheJogador==0){
                              System.out.println("\n\n\n\n\nPosição Inválida\n");       
                         }
-                       
-                  } 
+                } 
                 // Mostrar Matriz
             	for(int i=0; i<3 ; i++){       
-                 
-                 	for(int j=0 ; j<3 ; j++){
-                       
-                		System.out.printf("   "+tabuleiro[i][j]);
+          		for(int j=0 ; j<3 ; j++){
+                	System.out.printf("   "+tabuleiro[i][j]);
               		}
-			System.out.println("\n");
+		System.out.println("\n");
+        	}
+		// verificar combinações para X. Passando ganhou para 1, que sera necessario para terminar o do while.
+            	if(tabuleiro[0][0]=='X'&&tabuleiro[0][1]=='X'&&tabuleiro[0][2]=='X' || tabuleiro[1][0]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[1][2]=='X' || tabuleiro[2][0]=='X'&&tabuleiro[2][1]=='X'&&tabuleiro[2][2]=='X' || tabuleiro[0][0]=='X'&&tabuleiro[1][0]=='X'&&tabuleiro[2][0]=='X' || tabuleiro[0][1]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[2][1]=='X'		  || tabuleiro[0][2]=='X'&&tabuleiro[1][2]=='X'&&tabuleiro[2][2]=='X' || tabuleiro[0][0]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[2][2]=='X' || tabuleiro[2][0]=='X'&&tabuleiro[1][1]=='X'&&tabuleiro[0][2]=='X'){
+              	System.out.println("\n\n\n\n\nO jogador 1 ganhou!!!!!\n\n\n\n\n\n\n\n");
+        	ganhou=1;
         	}
 
 
